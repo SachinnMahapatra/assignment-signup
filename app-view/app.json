@@ -1,7 +1,16 @@
 {
   "expo": {
+    "owner": "sachinmp",
     "name": "app-view",
-    "slug": "app-view",
+    "scheme": "assignment",
+    "slug": "assignment",
+    "plugins": [
+      "expo-updates",
+      "expo-dev-client"
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/5ceaef42-4068-45be-974a-47839fc0bbb9"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,16 +22,26 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sachinmp.appview",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ceaef42-4068-45be-974a-47839fc0bbb9"
+      }
     }
   }
 }
